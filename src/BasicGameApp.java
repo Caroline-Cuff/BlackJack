@@ -15,12 +15,17 @@ public class BasicGameApp {
         deck = new Card [52];
         for (int x = 0; x < 13; x++ ){
             deck [x] = new Card(10, x,"Hearts");
-            deck[x].printInfo();
         }
+        printDeck();
 
 
         // todo: fill the deck array with your favorite card
+    }
 
+    public void printDeck(){
+        for (int x = 0; x < 13; x++ ){
+            deck[x].printInfo();
+        }
     }
 
 
