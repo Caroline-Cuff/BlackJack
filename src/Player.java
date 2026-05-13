@@ -7,6 +7,9 @@ public class Player {
     public String name;
     public Card[] playerHand;
 
+    public Player(){
 
+
+    }
 
 }

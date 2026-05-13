@@ -6,7 +6,7 @@ public class Card {
     public String cardName;
     public String suit;
 
-    public Card(int cardValue2, int cardName2, String suit2){
+    public Card(int cardValue2, int cardName2, int suit2){
         cardValue = cardValue2;
         if (cardName2 == 0){
             cardName = "Ace";
@@ -60,10 +60,18 @@ public class Card {
             cardValue = 10;
         }
 
-
-
-        suit = suit2;
-
+        if (suit2  ==0 ){
+            suit = "Hearts";
+        }
+        else if (suit2 == 1) {
+            suit = "Clubs";
+        }
+        else if (suit2 == 2){
+            suit = "Spades";
+        }
+        else if (suit2 == 3){
+            suit = "Diamonds";
+        }
 
     }
 
