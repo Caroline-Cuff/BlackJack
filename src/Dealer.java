@@ -20,6 +20,9 @@ public class Dealer {
         for (int x = 0; x< dealerHand.length; x++){
             dealerHand[x].printInfo();
         }
+        if (cardTotal >= 16){
+            isOver = true;
+        }
         System.out.println("The dealer's total is " + cardTotal + ". It is " + isOver + " that the dealer is over 16." +
                 ". It is " + isBust + " that they are bust.");
     }

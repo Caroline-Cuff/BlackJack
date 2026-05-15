@@ -22,6 +22,9 @@ public class Player {
         for (int x = 0; x< playerHand.length; x++){
             playerHand[x].printInfo();
         }
+        if(cardTotal >=15){
+            isHit = true;
+        }
         System.out.println(name + ", your total is " + cardTotal +
                 ". It is " + isBust + " that you are bust. It is " + isHit + " that you should hit.");
     }
