@@ -22,7 +22,7 @@ public class Player {
         for (int x = 0; x< playerHand.length; x++){
             playerHand[x].printInfo();
         }
-        if(cardTotal =<15){
+        if(cardTotal <=15){
             isHit = true;
         }
         System.out.println(name + ", your total is " + cardTotal +

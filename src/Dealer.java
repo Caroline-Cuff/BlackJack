@@ -24,7 +24,7 @@ public class Dealer {
             isOver = true;
         }
         System.out.println("The dealer's total is " + cardTotal + ". It is " + isOver + " that the dealer is over 16." +
-                ". It is " + isBust + " that they are bust.");
+                " It is " + isBust + " that they are bust.");
     }
 
     public void calculateTotal(){
